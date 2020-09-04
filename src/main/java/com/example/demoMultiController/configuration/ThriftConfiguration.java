@@ -21,7 +21,6 @@ public class ThriftConfiguration {
     @Bean
     public ServletRegistrationBean<Servlet> thrift(TProtocolFactory protocolFactory, HelloWorldThriftController handler) {
         Servlet servlet = new TServlet(new THelloWorldService.Processor<>(handler), protocolFactory);
-
         return new ServletRegistrationBean<>(servlet, "/thrift");
     }
 }

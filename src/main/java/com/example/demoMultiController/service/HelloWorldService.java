@@ -2,8 +2,8 @@ package com.example.demoMultiController.service;
 
 import com.example.demoMultiController.exception.ServiceErrorCode;
 import com.example.demoMultiController.exception.ServiceException;
-import com.example.demoMultiController.model.SumRequest;
 import com.example.demoMultiController.model.Result;
+import com.example.demoMultiController.model.SumRequest;
 import org.springframework.stereotype.Service;
 
 @Service
